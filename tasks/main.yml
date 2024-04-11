@@ -1,0 +1,6 @@
+---
+# tasks file for myapache
+- name: Install apache Package
+  apt: name={{package_name}} state=latest
+  notify:
+  - restart apache
